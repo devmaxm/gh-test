@@ -6,6 +6,7 @@ dotenv.config()
 @Injectable()
 export class AppService {
   getHello(): string {
+    console.log(process.env.ENV_TEST)
     return process.env.ENV_TEST;
   }
 }
